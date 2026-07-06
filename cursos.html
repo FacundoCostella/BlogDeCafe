@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogDeCafé</title>
-    <!--    ENLACES    -->
+    <title>BlogDeCafé — Cursos</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header class="header">
-        <!--    BARRA NAVEGACIÓN    -->
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    <h1 class="logo__nombre no-margin">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
@@ -29,28 +27,65 @@
         </div>
 
         <div class="header__texto">
-            <h2 class="no-margin">
-                Blog de Café con consejos y cursos
-            </h2>
-            <p class="no-margin">
-                Aprende de los expertos con las mejores recetas y consejos.
-            </p>
+            <p class="eyebrow no-margin">Aprendé con nosotros</p>
+            <h2 class="no-margin">Cursos y talleres</h2>
+            <hr class="copper-line">
+            <p class="no-margin">Elevá tu café diario con técnicas profesionales.</p>
         </div>
     </header>
 
-    <main class="contenedor">
-        <h3 class="centrar-texto">Cursos Disponibles</h3>
-        
-        <div class="widget-curso">
-            <h4 class="no-margin">Técnicas de Extracción de Café</h4>
-            <p class="widget-curso__item">Precio: 
-                <span class="widget-curso__info"> Gratis</span>
-            </p>
-            <p class="widget-curso__item">Cupos: 
-                <span class="widget-curso__info"> 20</span>
-            </p>
-            <!--BOTON-->
-            <a href="entrada.html" class="boton boton--secundario">Más información</a>
+    <main class="contenedor cursos-page">
+        <p class="eyebrow">Disponibles ahora</p>
+        <h3>Cursos Disponibles</h3>
+
+        <div class="cursos-grid">
+            <!-- Curso 1 -->
+            <div class="curso-card reveal">
+                <div class="curso-card__imagen">
+                    <img src="img/curso1.jpg" alt="Técnicas de extracción">
+                </div>
+                <div class="curso-card__contenido">
+                    <p class="eyebrow" style="margin-bottom: 0.4rem">Gratuito</p>
+                    <h4>Técnicas de Extracción de Café</h4>
+                    <div class="curso-card__meta">
+                        <span class="curso-card__meta-item">Cupos: <span class="curso-card__meta-value">20</span></span>
+                        <span class="curso-card__meta-item">Duración: <span class="curso-card__meta-value">4 semanas</span></span>
+                    </div>
+                    <a href="entrada.html" class="boton boton--primario">Más información</a>
+                </div>
+            </div>
+
+            <!-- Curso 2 -->
+            <div class="curso-card reveal">
+                <div class="curso-card__imagen">
+                    <img src="img/curso2.jpg" alt="Recetas para principiantes">
+                </div>
+                <div class="curso-card__contenido">
+                    <p class="eyebrow" style="margin-bottom: 0.4rem">Gratuito</p>
+                    <h4>4 Recetas de Café para Principiantes</h4>
+                    <div class="curso-card__meta">
+                        <span class="curso-card__meta-item">Cupos: <span class="curso-card__meta-value">20</span></span>
+                        <span class="curso-card__meta-item">Duración: <span class="curso-card__meta-value">2 semanas</span></span>
+                    </div>
+                    <a href="entrada.html" class="boton boton--primario">Más información</a>
+                </div>
+            </div>
+
+            <!-- Curso 3 -->
+            <div class="curso-card reveal">
+                <div class="curso-card__imagen">
+                    <img src="img/curso3.jpg" alt="Cata y degustación">
+                </div>
+                <div class="curso-card__contenido">
+                    <p class="eyebrow" style="margin-bottom: 0.4rem">Próximamente</p>
+                    <h4>Cata y Perfiles de Sabor</h4>
+                    <div class="curso-card__meta">
+                        <span class="curso-card__meta-item">Cupos: <span class="curso-card__meta-value">15</span></span>
+                        <span class="curso-card__meta-item">Duración: <span class="curso-card__meta-value">3 semanas</span></span>
+                    </div>
+                    <a href="contacto.html" class="boton boton--secundario">Consultar disponibilidad</a>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -58,17 +93,29 @@
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    <h1 class="logo__nombre no-margin">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
                     <a href="contacto.html" class="navegacion__enlace">Contacto</a>
                 </nav>
             </div>
+            <p class="footer__copy">BlogDeCafé · Café de especialidad para entusiastas</p>
         </div>
     </footer>
-    
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
+
 </body>
 </html>

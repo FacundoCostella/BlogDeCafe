@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogDeCafe</title>
-    <!--    ENLACES    -->
+    <title>BlogDeCafé — Café de Especialidad</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header class="header">
-        <!--    BARRA NAVEGACIÓN    -->
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    <h1 class="logo__nombre no-margin">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
@@ -30,143 +27,206 @@
         </div>
 
         <div class="header__texto">
-            <h2 class="no-margin">
-                Blog de Café con consejos y cursos
-            </h2>
-            <p class="no-margin">
-                Aprende de los expertos con las mejores recetas y consejos.
-            </p>
+            <p class="eyebrow no-margin">Especialidad · Origen · Cultura</p>
+            <h2 class="no-margin">Del grano a la taza</h2>
+            <hr class="copper-line">
+            <p class="no-margin">Cada taza cuenta una historia. Aprende de los expertos con las mejores recetas y consejos.</p>
         </div>
     </header>
 
     <div class="contenedor contenido-principal">
-        <!--    CONTENIDO DEL BLOG  -->
         <main class="blog">
+            <p class="eyebrow">Entradas recientes</p>
             <h3>Nuestro Blog</h3>
-            <!--    ENTRADA 1 -->
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
-                </div>
 
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Tipos de Grano de Café</h4>
-                    <p class="tiposdegranos_texto">
-                        El carácter de un buen café comienza en el origen. Aunque existen decenas de especies, el mercado global se rinde ante dos grandes protagonistas que definen el sabor de cada mañana:
-                        <ul>
-                            <li><b>Grano Arábica:</b> Es el preferido de los paladares exigentes. Cultivado a grandes alturas, se distingue por su acidez equilibrada, aromas florales y notas frutales. Tiene menos cafeína, lo que permite apreciar una mayor complejidad de sabores.</li>
-                            <li><b>Grano Robusta:</b> Como su nombre indica, es una planta resistente que crece en zonas bajas. Su sabor es más intenso, terroso y amargo, con una textura más densa. Posee casi el doble de cafeína que el Arábica, siendo ideal para quienes buscan energía pura y una crema persistente.</li>
-                            <li><b>El Arte del Blend:</b> Muchos baristas combinan ambos granos para crear perfiles únicos, buscando el equilibrio perfecto entre el aroma delicado del Arábica y el cuerpo robusto de la variedad Robusta.</li>
-                        </ul>
-                    </p>
-                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
-                </div>
-            </article>
-            <!--    ENTRADA 2 -->
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
-                </div>
-                
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
-                    <p class="tiposdegranos_texto">
-                        Del grano a la taza, 3 formas de disfrutarlo. <br>
-                        Descubre cómo transformar un buen café en una experiencia única. Desde la tradición italiana hasta las tendencias más refrescantes, estas recetas están diseñadas para resaltar cada nota de sabor y aroma en tu paladar.
-                        <ol>
-                            <b><li>Cappuccino Clásico</li></b>
-                            <ul>
-                                <li><b>Base:</b> 1 shot de espresso.</li>
-                                <li><b>Cuerpo:</b>1/3 de leche caliente y 1/3 de espuma densa.</li>
-                                <li><b>Toque Final:</b> Cacao en polvo espolvoreado.</li>
-                            </ul>
-                            <b><li>Cold Brew Tonic</li></b>
-                            <ul>
-                                <li><b>Base:</b> 100 ml de café macerado en frío (Cold Brew).</li>
-                                <li><b>Cuerpo:</b> 150 ml de agua tónica y abundante hielo.</li>
-                                <li><b>Toque Final:</b> Una rodaja de limón o pomelo.</li>
-                            </ul>
-                            <b><li>Affogato</li></b>
-                            <ul>
-                                <li><b>Base:</b> 1 bola de helado de vainilla.</li>
-                                <li><b>Cuerpo:</b> 1 shot de espresso caliente vertido encima.</li>
-                                <li><b>Toque Final:</b> Avellanas picadas o chocolate rallado.</li>
-                            </ul>
-                        </ol>
-                        
-                    </p>
-                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
-                </div>
-            </article>
-            <!--    ENTRADA 3 -->
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
-                </div>
-                
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Beneficios del Café</h4>
-                    <p class="tiposdegranos_texto">
-                        El café es el combustible de nuestras ideas y un aliado natural para nuestra salud. Más allá de su inconfundible aroma, cada taza está cargada de propiedades que benefician tu cuerpo y potencian tu mente.
-                        <ul>
-                            <li><b>Enfoque y Concentración:</b> La cafeína actúa como un estimulante natural del sistema nervioso, mejorando el estado de alerta y la función cognitiva.</li>
-                            <li><b>Potente Antioxidante:</b> Es una de las mayores fuentes de polifenoles en la dieta moderna, los cuales ayudan a proteger las células contra el envejecimiento prematuro.</li>
-                            <li><b>Rendimiento Físico:</b> Al aumentar los niveles de adrenalina, el café ayuda a movilizar los ácidos grasos, mejorando la resistencia durante el ejercicio.</li>
-                        </ul>
-                    </p>
-                    <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
-                </div>
-            </article>
+            <div class="blog-grid">
+                <!-- Entrada 1 -->
+                <article class="entrada reveal">
+                    <div class="entrada__imagen">
+                        <img src="img/blog1.jpg" alt="Granos de café molidos en portafilter">
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">Tipos de Grano de Café</h4>
+                        <p>El carácter de un buen café comienza en el origen. Arábica, Robusta y el arte del blend definen el sabor de cada mañana.</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+                    </div>
+                </article>
 
+                <!-- Entrada 2 -->
+                <article class="entrada reveal">
+                    <div class="entrada__imagen">
+                        <img src="img/blog2.jpg" alt="Taza de café con cupcakes">
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
+                        <p>Del grano a la taza, 3 formas de disfrutarlo. Cappuccino, Cold Brew Tonic y Affogato para resaltar cada nota de sabor.</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+                    </div>
+                </article>
+
+                <!-- Entrada 3 -->
+                <article class="entrada reveal">
+                    <div class="entrada__imagen">
+                        <img src="img/blog3.jpg" alt="Taza de café sobre arpillera">
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">Beneficios del Café</h4>
+                        <p>Más allá de su aroma, cada taza está cargada de propiedades que benefician tu cuerpo y potencian tu mente.</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
+                    </div>
+                </article>
+            </div>
         </main>
 
-        <!--    BARRA LATERAL   -->
+        <!-- Barra lateral -->
         <aside class="sidebar">
-            <h3>Nuestros Cursos y Talleres</h3>
-            <!--    CURSOS      -->
+            <p class="eyebrow">Fichas de cata</p>
+            <h3>Notas de Sabor</h3>
+
+            <!-- Ficha de cata 1 -->
+            <div class="tasting-card reveal">
+                <div class="tasting-card__header">
+                    <span class="tasting-card__origin">Colombia</span>
+                    <span class="tasting-card__altitude">1.800m</span>
+                </div>
+                <p class="tasting-card__region">Huila · Washed</p>
+                <div class="tasting-card__roast">
+                    <span class="tasting-card__roast-label">Tueste</span>
+                    <div class="tasting-card__roast-bar">
+                        <div class="tasting-card__roast-fill" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="tasting-card__attributes">
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Acidez</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Cuerpo</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Dulzor</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Final</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="tasting-card__notes-label">Notas de sabor</p>
+                <div class="tasting-card__tags">
+                    <span class="tasting-card__tag">cítricos</span>
+                    <span class="tasting-card__tag">chocolate</span>
+                    <span class="tasting-card__tag">caramelo</span>
+                </div>
+            </div>
+
+            <!-- Ficha de cata 2 -->
+            <div class="tasting-card reveal">
+                <div class="tasting-card__header">
+                    <span class="tasting-card__origin">Etiopía</span>
+                    <span class="tasting-card__altitude">2.100m</span>
+                </div>
+                <p class="tasting-card__region">Yirgacheffe · Natural</p>
+                <div class="tasting-card__roast">
+                    <span class="tasting-card__roast-label">Tueste</span>
+                    <div class="tasting-card__roast-bar">
+                        <div class="tasting-card__roast-fill" style="width: 30%"></div>
+                    </div>
+                </div>
+                <div class="tasting-card__attributes">
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Acidez</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Cuerpo</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Dulzor</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="tasting-card__attr">
+                        <span class="tasting-card__attr-label">Final</span>
+                        <div class="tasting-card__attr-bar">
+                            <div class="tasting-card__attr-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="tasting-card__notes-label">Notas de sabor</p>
+                <div class="tasting-card__tags">
+                    <span class="tasting-card__tag">flores</span>
+                    <span class="tasting-card__tag">frutos rojos</span>
+                    <span class="tasting-card__tag">jazmín</span>
+                </div>
+            </div>
+
+            <!-- Cursos widget -->
+            <p class="eyebrow" style="margin-top: var(--space-lg)">Próximos talleres</p>
+            <h3>Cursos</h3>
+
             <ul class="cursos no-padding">
-                <li class="widget-curso">
-                    <h4 class="no-margin">Técnicas de Extracción de Café</h4>
-                    <p class="widget-curso__item">Precio: 
-                        <span class="widget-curso__info"> Gratis</span>
-                    </p>
-                    <p class="widget-curso__item">Cupos: 
-                        <span class="widget-curso__info"> 20</span>
-                    </p>
-                    <!--BOTON-->
+                <li class="widget-curso reveal">
+                    <h4 class="no-margin">Técnicas de Extracción</h4>
+                    <p class="widget-curso__item">Precio: <span class="widget-curso__info">Gratis</span></p>
+                    <p class="widget-curso__item">Cupos: <span class="widget-curso__info">20</span></p>
                     <a href="entrada.html" class="boton boton--secundario">Más información</a>
                 </li>
-
-                <li class="widget-curso">
-                    <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
-                    <p class="widget-curso__item">Precio: 
-                        <span class="widget-curso__info"> Gratis</span>
-                    </p>
-                    <p class="widget-curso__item">Cupos: 
-                        <span class="widget-curso__info"> 20</span>
-                    </p>
-                    <!--BOTON-->
+                <li class="widget-curso reveal">
+                    <h4 class="no-margin">4 Recetas para Principiantes</h4>
+                    <p class="widget-curso__item">Precio: <span class="widget-curso__info">Gratis</span></p>
+                    <p class="widget-curso__item">Cupos: <span class="widget-curso__info">20</span></p>
                     <a href="entrada.html" class="boton boton--secundario">Más información</a>
                 </li>
             </ul>
         </aside>
     </div>
-    
+
     <footer class="footer">
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    <h1 class="logo__nombre no-margin">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
                     <a href="contacto.html" class="navegacion__enlace">Contacto</a>
                 </nav>
             </div>
+            <p class="footer__copy">BlogDeCafé · Café de especialidad para entusiastas</p>
         </div>
     </footer>
+
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        reveals.forEach(el => observer.observe(el));
+    </script>
 
 </body>
 </html>

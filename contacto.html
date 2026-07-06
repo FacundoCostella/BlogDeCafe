@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogDeCafé</title>
-    <!--    ENLACES    -->
+    <title>BlogDeCafé — Contacto</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header class="header">
-        <!--    BARRA NAVEGACIÓN    -->
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    <h1 class="logo__nombre no-margin">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
@@ -29,30 +27,148 @@
         </div>
 
         <div class="header__texto">
-            <h2 class="no-margin">
-                Blog de Café con consejos y cursos
-            </h2>
-            <p class="no-margin">
-                Aprende de los expertos con las mejores recetas y consejos.
-            </p>
+            <p class="eyebrow no-margin">Hablemos</p>
+            <h2 class="no-margin">Contacto</h2>
+            <hr class="copper-line">
+            <p class="no-margin">¿Tenés una pregunta o querés sumarte a un curso?</p>
         </div>
     </header>
-    
+
+    <main class="contenedor contacto-page">
+        <p class="eyebrow">Escribinos</p>
+        <h3>Ponete en contacto</h3>
+        <p>Completá el formulario y te respondemos a la brevedad. Ya sea para consultar sobre nuestros cursos, proponer una colaboración o simplemente charlar de café.</p>
+
+        <form id="contact-form" class="formulario reveal" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Reemplazá con tu access key de Web3Forms: https://web3forms.com -->
+            <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
+            <input type="hidden" name="subject" value="Nuevo mensaje — BlogDeCafé">
+            <input type="hidden" name="from_name" value="BlogDeCafé Formulario">
+            <!-- Honeypot anti-spam -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+            <div class="formulario__campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="formulario__campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="formulario__campo">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="" disabled selected>Seleccioná un tema</option>
+                    <option value="Consulta sobre cursos">Consulta sobre cursos</option>
+                    <option value="Recetas y técnicas">Recetas y técnicas</option>
+                    <option value="Colaboración">Colaboración</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="formulario__campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Contanos en qué podemos ayudarte..." required></textarea>
+            </div>
+
+            <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+
+            <button type="submit" class="boton boton--primario" id="submit-btn">
+                <span class="btn-text">Enviar mensaje</span>
+                <span class="btn-loading" style="display:none">Enviando...</span>
+            </button>
+        </form>
+    </main>
+
     <footer class="footer">
         <div class="contenedor">
             <div class="barra">
                 <a class="logo" href="index.html">
-                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                    <h1 class="logo__nombre no-margin">Blog<span class="logo__bold">DeCafé</span></h1>
                 </a>
-
                 <nav class="navegacion">
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
                     <a href="contacto.html" class="navegacion__enlace">Contacto</a>
                 </nav>
             </div>
+            <p class="footer__copy">BlogDeCafé · Café de especialidad para entusiastas</p>
         </div>
     </footer>
-    
+
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Form handling
+        const form = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoading = submitBtn.querySelector('.btn-loading');
+        const formMessage = document.getElementById('form-message');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Reset estado previo
+            formMessage.className = 'form-message';
+            formMessage.textContent = '';
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline';
+
+            // Validación JS adicional
+            const email = form.email.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showMessage('Por favor ingresá un email válido.', 'error');
+                resetButton();
+                return;
+            }
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    showMessage('¡Mensaje enviado! Te responderemos a la brevedad.', 'success');
+                    form.reset();
+                } else {
+                    showMessage('Hubo un error al enviar. Intentá de nuevo o escribinos por email.', 'error');
+                }
+            } catch (error) {
+                showMessage('No se pudo conectar. Verificá tu conexión y intentá de nuevo.', 'error');
+            }
+
+            resetButton();
+        });
+
+        function showMessage(text, type) {
+            formMessage.textContent = text;
+            formMessage.className = 'form-message form-message--' + type;
+        }
+
+        function resetButton() {
+            submitBtn.disabled = false;
+            btnText.style.display = 'inline';
+            btnLoading.style.display = 'none';
+        }
+    </script>
+
 </body>
 </html>
