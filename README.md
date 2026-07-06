@@ -1,6 +1,7 @@
 # BlogDeCafé
 
 Blog de café de especialidad con consejos, recetas y cursos para entusiastas del café.
+(Página web creada con fines de estudios)
 
 ## Estructura del proyecto
 
