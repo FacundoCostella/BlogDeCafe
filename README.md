@@ -1,9 +1,11 @@
-# BlogDeCafé
+# BlogDeCafé ☕
+## 🔗 Link: https://blogdecafe-facundo.netlify.app/
 
-Blog de café de especialidad con consejos, recetas y cursos para entusiastas del café.
+Blog de café de especialidad con consejos, recetas y cursos para entusiastas del café. 
+
 (Página web creada con fines de estudios)
 
-## Estructura del proyecto
+## Estructura del proyecto 
 
 ```
 blogCafe/
@@ -26,7 +28,7 @@ blogCafe/
     └── nosotros.jpg    # Foto del equipo
 ```
 
-## Tecnologías
+## Tecnologías 💻
 
 - **HTML5** — estructura semántica
 - **CSS3** — custom properties, grid, flexbox, animaciones
